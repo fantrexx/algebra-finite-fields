@@ -19,7 +19,6 @@ public class Main {
                     continue;
                 }
                 GFp2Tables field = new GFp2Tables(p);
-                field.printElements();
                 field.printAdditionTable();
                 field.printMultiplicationTable();
             } catch (NumberFormatException e) {
