@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("=======================");
+            System.out.println("===================================================================");
             System.out.println("Input a prime number p to build GF(p^2) tables, or press q to exit:");
             String input = scanner.nextLine();
             if (input.equals("q")) {

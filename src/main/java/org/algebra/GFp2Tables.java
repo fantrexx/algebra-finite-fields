@@ -31,9 +31,16 @@ public class GFp2Tables {
 
     public void printAdditionTable() {
         System.out.println("\nAddition Table GF(" + p + "^2):");
+        System.out.print("        + ");
+        for (FiniteFieldElement header : elements) {
+            System.out.printf("%15s", header);
+        }
+        System.out.println();
+
         for (FiniteFieldElement e1 : elements) {
+            System.out.printf("%10s", e1);
             for (FiniteFieldElement e2 : elements) {
-                System.out.print(e1.add(e2) + "\t");
+                System.out.printf("%15s", e1.add(e2));
             }
             System.out.println();
         }
@@ -41,9 +48,16 @@ public class GFp2Tables {
 
     public void printMultiplicationTable() {
         System.out.println("\nMultiplication Table GF(" + p + "^2):");
+        System.out.print("        * ");
+        for (FiniteFieldElement header : elements) {
+            System.out.printf("%15s", header);
+        }
+        System.out.println();
+
         for (FiniteFieldElement e1 : elements) {
+            System.out.printf("%10s", e1);
             for (FiniteFieldElement e2: elements) {
-                System.out.print(e1.multiply(e2) + "\t");
+                System.out.printf("%15s", e1.multiply(e2));
             }
             System.out.println();
         }
