@@ -12,7 +12,7 @@ public class GFp2Tables {
     }
 
     /**
-     *  Generates all (a,b) pairs, where a,b is in {0, 1, ..., p-1}
+     *  Generates all (a,b) pairs, where a,b belongs to {0, 1, ..., p-1}
      * @return array of p^2 elements
      */
     private int[][] generateElements() {
